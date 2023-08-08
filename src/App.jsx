@@ -49,7 +49,7 @@ const App = () => {
   return (
     <>
       <h1 className='heading'>Zoo city</h1>
-        <Cart />
+        <Cart cartItem={cartItem} />
       <div className="cards_container">
         {courses.map(course => (
           <Card 

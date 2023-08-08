@@ -18,7 +18,9 @@ const card = (props) => {
 
   return (
     <div className='card'>
-        <span className={`${count != 0 ? 'card__badge' :  'card__badge-hidden'}`}>1</span>
+        <span className={`${count != 0 ? 'card__badge' :  'card__badge-hidden'}`}>
+            {count}
+        </span>
 
         <div className="image__container">
             <img 
@@ -42,7 +44,9 @@ const card = (props) => {
 
         <div className="btn__container">
             <Button title={'+'} onClick={hanleIncrement} type={"add"} />
-            <Button title={'-'} onClick={hanleDecrement} type={"remove"} />
+            {count != 0 ? (
+                  <Button title={'-'} onClick={hanleDecrement} type={"remove"} />
+            ): ""}     
         </div>
     </div>
   )

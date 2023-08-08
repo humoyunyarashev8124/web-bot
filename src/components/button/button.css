@@ -34,3 +34,7 @@
 .btn.checkout {
     background: rgba(12, 205, 57, 0.77);
 }
+
+.btn.disabled {
+    opacity: 0.5;
+}
