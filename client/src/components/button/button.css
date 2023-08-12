@@ -1,0 +1,40 @@
+.btn {
+    padding: 1rem 0.8rem;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 120px;
+    box-shadow: 1px -3px 52px -5px rgba(0, 0, 0, 0.77);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.btn.add {
+    background: rgba(197, 237, 16, 0.77);
+}
+
+.btn.add:hover {
+    background: rgba(140, 183, 23, 0.77);
+}
+.btn.add:active {
+    background: rgba(112, 140, 33, 0.77);
+}
+.btn.remove {
+    background: rgba(197, 41, 41, 0.77);
+}
+.btn.remove:hover {
+    background: rgba(118, 34, 34, 0.77);
+}
+.btn.remove:active {
+    background: rgba(81, 27, 27, 0.77);
+}
+
+
+.btn.checkout {
+    background: rgba(12, 205, 57, 0.77);
+}
+
+.btn.disabled {
+    opacity: 0.5;
+}
